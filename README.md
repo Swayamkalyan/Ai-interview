@@ -312,7 +312,7 @@ This project is under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
-**Aftab Alam** — AI Project
+**Swayam Kalyan** — AI Project
 
 ---
 
