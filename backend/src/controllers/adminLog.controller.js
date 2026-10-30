@@ -49,7 +49,7 @@ const seedMockLogs = async () => {
       status: 'success',
       userId: triggerUser,
       details: 'Groq Llama-3.3 prompt execution processed for candidate Resume parser.',
-      metadata: { model: 'llama-3.3-70b-versatile', latencyMs: 840, promptTokens: 320, completionTokens: 120 },
+      metadata: { model: 'openai/gpt-oss-120b', latencyMs: 840, promptTokens: 320, completionTokens: 120 },
     },
     {
       category: 'payment',

@@ -36,7 +36,7 @@ const systemSettingSchema = new mongoose.Schema(
       },
     },
     ai: {
-      model: { type: String, default: 'llama-3.3-70b-versatile' },
+      model: { type: String, default: 'openai/gpt-oss-120b' },
       temperature: { type: Number, default: 0.5, min: 0, max: 2.0 },
       maxTokens: { type: Number, default: 1024 },
     },

@@ -244,7 +244,7 @@ function ambiguityScore(raw, parsed) {
  * Call Groq to parse an ambiguous query into the canonical shape.
  * Only invoked when ambiguityScore ≥ AMBIGUITY_THRESHOLD.
  *
- * Uses llama-3.3-70b-versatile at temperature=0 for deterministic JSON.
+ * Uses openai/gpt-oss-120b at temperature=0 for deterministic JSON.
  *
  * @param {string} query
  * @param {object} partial - Partial output from ruleBasedParse (may have some fields)
@@ -285,7 +285,7 @@ Return the complete JSON object now:`;
 
   try {
     const response = await groq.chat.completions.create({
-      model          : 'llama-3.3-70b-versatile',
+      model          : 'openai/gpt-oss-120b',
       messages       : [
         { role: 'system', content: systemPrompt },
         { role: 'user',   content: userPrompt   },
